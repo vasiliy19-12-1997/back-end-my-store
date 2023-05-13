@@ -14,7 +14,7 @@ model User {
   createdAt DateTime @default(now()) @map("create_at")
   updatedAt DateTime @updatedAt @map("update_at")
   email     String   @unique
-  password String
+  password  String
   name      String @unique 
   avatarPath String @default("/uploads/default-avatar.png") @map("avatar_path")
   phone String @default("")
